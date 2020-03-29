@@ -1,63 +1,21 @@
 import React from 'react';
 import land from './res/landscape.jpg';
+import websites from './projects.json'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
 import {Parallax} from "react-parallax";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Avatar from 'react-avatar';
 
 
-const websites1 = [{
-    link: 'https://wokstym.github.io/IntrToWebAplic/Task1/index.html',
-    img: require('./res/gotowaniev1.PNG'),
-    title: 'Strona o gotowaniu',
-    body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
-  },
-  {
-    link: 'https://wokstym.github.io/IntrToWebAplic/Task2/index.html',
-    img: require('./res/bootstrapIT.PNG'),
-    title: 'Strona IT',
-    body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
-  },
-  {
-    link: 'https://wokstym.github.io/IntrToWebAplic/Task2/index.html',
-    img: require('./res/bootstrapIT.PNG'),
-    title: 'Strona IT',
-    body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
-  },
-  {
-    link: 'https://wokstym.github.io/IntrToWebAplic/Task2/index.html',
-    img: require('./res/bootstrapIT.PNG'),
-    title: 'Strona IT',
-    body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
-  },
-  {
-    link: 'https://wokstym.github.io/IntrToWebAplic/Task2/index.html',
-    img: require('./res/bootstrapIT.PNG'),
-    title: 'Strona IT',
-    body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
-  }
-];
-
-const insideStyles = {
-  background: "black",
-  color: "white",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)",
-};
-
 class InfoCard extends React.Component {
   render() {
-    return  this.props.websites.map(function (website) {
+    return this.props.websites.map(function (website) {
       return (
         <a href={website.link} style={{ textDecoration: 'none' }} className="cardWrapper">
             <Card border="light" className="card">
-                  <Card.Img className="top" variant="top" src={website.img} />
+                  <Card.Img className="top" variant="top" src={require(`${website.img}`)} />
                 <Card.Body>
                     <Card.Title>{website.title}</Card.Title>
                     <Card.Text>{website.body}</Card.Text>
@@ -65,28 +23,43 @@ class InfoCard extends React.Component {
             </Card>
         </a>
       );
-    });   
+    });
   }
 }
 
 
 function App() {
+  let width = window.innerWidth;
+  let avatarSize = width > 770 ? 250 : 150;
+
   return (
     <div className="App">
       <Parallax bgImage={land} strength={1000}>
         <div className='name'>
-          <Avatar className="avatar" githubHandle="wokstym" size={250} round={true} />
+          <Avatar className="avatar" githubHandle="wokstym" size={avatarSize} round={true} />
           <div className="insideName">Grzegorz Poręba</div>
           <div className="desc">
             <div >Computer Science Student</div> 
             <div > AGH University of Science and Technology</div>
           </div>
+          <div className="logos">
+            <a href='https://github.com/Wokstym' >
+              <img alt="Github" src={require('./res/social/github2.png')}/>  
+            </a>
+            <a href='https://www.linkedin.com/in/porebagrzegorz/' >          
+              <img alt="LinkedIn" src={require('./res/social/linkedin.svg')}/>
+            </a>
+            <a  href='mailto:grzegorz.poreba.73@gmail.com' >
+              <img alt="mail" src={require('./res/social/mail.png')}/>
+            </a>
+          </div>
         </div>
       </Parallax>
       <Row className="justify-content-md-center cards">
-        <InfoCard websites={websites1}/>
+        <InfoCard websites={websites}/>
       </Row>
     </div>  
+
   );
 }
 

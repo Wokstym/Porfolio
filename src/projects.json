@@ -1,0 +1,26 @@
+[
+    {
+        "link": "https://github.com/Wokstym/ObjectOrientProg",
+        "img": "./res/2048.gif",
+        "title": "Object Oriented Programming Repository",
+        "body": "Features Evolution Simulator and 2048 game project written in Java with use of maven, lombok and JavaFX."
+    },
+    {
+        "link": "https://github.com/Wokstym/IntrToWebAplic/tree/master/Wiki",
+        "img": "./res/courseWiki.gif",
+        "title": "Course wiki",
+        "body": "Webpage and system for signing up for courses using Angular & Firebase."
+    },
+    {
+        "link": "https://wokstym.github.io/IntrToWebAplic/Task2/index.html",
+        "img": "./res/bootstrapIT.PNG",
+        "title": "IT Webpage",
+        "body": "Webpage for tech company, featuring bootstrap for Introduction to Web Application laboratories."
+    },
+    {
+        "link": "https://wokstym.github.io/IntrToWebAplic/Task3/index.html",
+        "img": "./res/gotowaniev1.PNG",
+        "title": "Cooking Webpage",
+        "body": "Webpage for cooking recipes, with simple javascript and basic html and css for Introduction to Web Application laboratories."
+    }
+]
