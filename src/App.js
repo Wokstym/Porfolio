@@ -4,8 +4,7 @@ import websites from './projects.json'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Parallax} from "react-parallax";
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
+import {Card, Row} from 'react-bootstrap/';
 import Avatar from 'react-avatar';
 
 
