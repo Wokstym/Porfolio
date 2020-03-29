@@ -75,6 +75,8 @@
   opacity: 0.7;
 }
 
+
+/* smaller devices */
 @media (max-width: 1250px) {
   .card {
     width: 415px;
@@ -117,106 +119,3 @@
     margin: 10px;
   }
 }
-
-/* .paral {
-  min-height: 600px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.paral p {
-  font-size: 24px;
-  color: #f5f5f5;
-  text-align: center;
-  line-height: 60px;
-}
-
-.paral h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 60px;
-  text-align: center;
-  padding-top: 60px;
-  line-height: 100px;
-}
-.jumbotron{margin-bottom: 0;} */
-/* 
-.paralsec {
-  background-image: url(res/landscape.jpg);
-} */
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.center-fit {
-  max-width: 100%;
-  height: 100vh;
-  margin: auto;
-}
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-
-.parallax__layer--back {
-  transform: translateZ(-1px);
-} */
