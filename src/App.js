@@ -125,7 +125,7 @@ class App extends React.Component {
           <Col></Col>
         </Row>
         <Row className="justify-content-md-center" style={{ margin: "10px" }}>
-          <AwesomeButton href={cv} download="Grzegorz_Poreba_Resume.pdf">
+          <AwesomeButton href={cv} target="_blank" download="Grzegorz_Poreba_Resume.pdf">
             {"Download my CV"}
           </AwesomeButton>
         </Row>
