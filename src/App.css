@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .desc {
   text-align: center;
   position: absolute;
@@ -91,6 +92,11 @@ body {
 .about {
   padding: 10%;
   padding-top: 0 ;
+  
+}
+.about > * > p {
+  font-family: "Roboto", sans-serif;
+  
 }
 
 /* smaller devices */
