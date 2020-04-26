@@ -12,6 +12,12 @@
         "body": "Webpage and system for signing up for courses using Angular & Firebase."
     },
     {
+        "link": "https://github.com/Wokstym/GameOfLife",
+        "img": "./res/GameOfLife.gif",
+        "title": "Conway's Game of Life",
+        "body": "Project made  as a recruitment task showcasing designing, programming and documenting a project in Java."
+    },
+    {
         "link": "https://wokstym.github.io/IntrToWebAplic/Task2/index.html",
         "img": "./res/bootstrapIT.PNG",
         "title": "IT Webpage",
