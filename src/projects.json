@@ -6,6 +6,12 @@
         "body": "Features Evolution Simulator and 2048 game project written in Java with use of maven, lombok and JavaFX."
     },
     {
+        "link": "https://github.com/Wokstym/EvolutionGenerator",
+        "img": "./res/EvolutionGenerator.gif",
+        "title": "Evolution Simulator",
+        "body": "Project made as a part of Java labs, in free time developed as a way of polishing skills as well as learning Spring library"
+    },
+    {
         "link": "https://github.com/Wokstym/IntrToWebAplic/tree/master/Wiki",
         "img": "./res/courseWiki.gif",
         "title": "Course wiki",
@@ -29,4 +35,5 @@
         "title": "Cooking Webpage",
         "body": "Webpage for cooking recipes, with simple javascript and basic html and css for Introduction to Web Application laboratories."
     }
+
 ]
