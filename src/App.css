@@ -3,6 +3,12 @@ body {
   overflow-x: hidden;
 }
 
+.linkButtons{
+  width: 100%;
+}
+
+
+
 
 .desc {
   text-align: center;
@@ -61,15 +67,6 @@ body {
 
 .card {
   width: 520px;
-}
-
-.top {
-  opacity: 0.7;
-  transition: 0.6s;
-}
-
-.top:hover {
-  opacity: 1;
 }
 
 .logos {
