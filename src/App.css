@@ -3,12 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-.linkButtons{
-  width: 100%;
-}
-
-
-
 
 .desc {
   text-align: center;
@@ -57,16 +51,8 @@ body {
   opacity: 0.6;
 }
 
-.cardWrapper {
-  padding: 2%;
-}
-
 .cards {
   padding: 5%;
-}
-
-.card {
-  width: 520px;
 }
 
 .logos {
@@ -97,11 +83,6 @@ body {
 }
 
 /* smaller devices */
-@media (max-width: 1250px) {
-  .card {
-    width: 415px;
-  }
-}
 
 @media (max-width: 990px) {
   .insideName {

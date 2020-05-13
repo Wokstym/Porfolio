@@ -1,39 +1,39 @@
 [
     {
         "repoLink": "https://github.com/Wokstym/ObjectOrientProg",
-        "img": "./res/2048.gif",
+        "img": "2048.gif",
         "title": "Object Oriented Programming Repository",
         "body": "Features Evolution Simulator and 2048 game project written in Java with use of maven, lombok and JavaFX."
     },
     {
         "repoLink": "https://github.com/Wokstym/EvolutionGenerator",
-        "img": "./res/EvolutionGenerator.gif",
+        "img": "EvolutionGenerator.gif",
         "title": "Evolution Simulator",
         "body": "Project made as a part of Java labs, in free time developed as a way of polishing skills as well as learning Spring library"
     },
     {
         "repoLink": "https://github.com/Wokstym/IntrToWebAplic/tree/master/Wiki",
-        "img": "./res/courseWiki.gif",
+        "img": "courseWiki.gif",
         "title": "Course wiki",
         "body": "Webpage and system for signing up for courses using Angular & Firebase."
     },
     {
         "repoLink": "https://github.com/Wokstym/GameOfLife",
-        "img": "./res/GameOfLife.gif",
+        "img": "GameOfLife.gif",
         "title": "Conway's Game of Life",
         "body": "Project made  as a recruitment task showcasing designing, programming and documenting a project in Java."
     },
     {
         "repoLink": "https://github.com/Wokstym/IntrToWebAplic/tree/master/Task2",
         "demoLink": "https://wokstym.github.io/IntrToWebAplic/Task2/index.html",
-        "img": "./res/bootstrapIT.PNG",
+        "img": "bootstrapIT.PNG",
         "title": "IT Webpage",
         "body": "Webpage for tech company, featuring bootstrap for Introduction to Web Application laboratories."
     },
     {
         "repoLink": "https://github.com/Wokstym/IntrToWebAplic/tree/master/Task3",
         "demoLink": "https://wokstym.github.io/IntrToWebAplic/Task3/index.html",
-        "img": "./res/gotowaniev1.PNG",
+        "img": "gotowaniev1.PNG",
         "title": "Cooking Webpage",
         "body": "Webpage for cooking recipes, with simple javascript and basic html and css for Introduction to Web Application laboratories."
     }

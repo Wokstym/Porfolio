@@ -3,77 +3,15 @@ import websites from "./projects.json";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ParallaxBanner } from "react-scroll-parallax";
-import { Card, Row, Col, Button, ButtonGroup, Collapse } from "react-bootstrap/";
+import {Row, Col} from "react-bootstrap/";
 import Avatar from "react-avatar";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import cv from "./res/GrzegPorResume.pdf";
 import Footer from "./Footer/Footer";
+import InfoCard from "./InfoCard/InfoCard"
 
 let width = window.innerWidth;
-
-class InfoCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { open: false };
-  }
-
-  render() {
-    const website = this.props.website;
-
-    return (
-      <div className="cardWrapper">
-        <Card
-          onMouseEnter={(e) => {
-           
-            e.target.style.opacity = 1;
-            this.setState({ open: true });
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.opacity = 0.7;
-            this.setState({ open: false });
-          }}
-          onLoad={(e) => {
-            e.target.style.opacity = 0.7
-            e.target.style.transition = "0.6s";}}
-          border="light"
-          className="card"
-        >
-          <Card.Img
-            variant="top"
-            src={require(`${website.img}`)}
-          />
-          <Collapse in={this.state.open}>
-            <div>
-              <ButtonGroup className="linkButtons" toggle>
-                <Button
-                  type="checkbox"
-                  href={website.repoLink}
-                  variant="primary"
-                >
-                  Code
-                </Button>
-                {website.demoLink && (
-                  <Button
-                    type="checkbox"
-                    href={website.demoLink}
-                    variant="success"
-                  >
-                    Demo
-                  </Button>
-                )}
-              </ButtonGroup>
-            </div>
-          </Collapse>
-          <Card.Body>
-            <Card.Title>{website.title}</Card.Title>
-            <Card.Text>{website.body}</Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-    );
-  }
-}
 
 class Name extends React.Component {
   render() {
@@ -109,18 +47,6 @@ class Name extends React.Component {
 }
 
 class App extends React.Component {
-  downloadEmployeeData = () => {
-    fetch("http://localhost:3000/res").then((response) => {
-      response.blob().then((blob) => {
-        let url = window.URL.createObjectURL(blob);
-        let a = document.createElement("a");
-        a.href = url;
-        a.download = "GrzegPorResume.pdf";
-        a.click();
-      });
-      //window.location.href = response.url;
-    });
-  };
   render() {
     let parallaxHeight = width > 770 ? "760px" : "560px";
     return (
@@ -138,8 +64,8 @@ class App extends React.Component {
         </ParallaxBanner>
         <div className="label">Projects</div>
         <Row className="justify-content-md-center cards">
-          {websites.map(function (website) {
-            return <InfoCard website={website} />;
+          {websites.map(function (website, i) {
+            return <InfoCard key={i} website={website} />;
           })}
         </Row>
         <div className="label">About Me</div>

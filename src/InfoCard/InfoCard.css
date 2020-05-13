@@ -1,0 +1,23 @@
+.cardWrapper {
+    padding: 2%;
+}
+
+.linkButtons {
+    width: 100%;
+}
+
+.card {
+    width: 520px;
+}
+
+@media (max-width: 1250px) {
+    .card {
+        width: 415px;
+    }
+}
+
+@media (max-width: 750px) {
+    .card {
+        width: 100%;
+    }
+}
