@@ -6,6 +6,12 @@
         "body": "Features Evolution Simulator and 2048 game project written in Java with use of maven, lombok and JavaFX."
     },
     {
+        "repoLink": "https://github.com/Wokstym/AutoFb",
+        "img": "AutoFB.gif",
+        "title": "AutoFb",
+        "body": "Page used for automating tasks when managing pages writen in Django, which teached me working in a team with branches and using API"
+    },
+    {
         "repoLink": "https://github.com/Wokstym/EvolutionGenerator",
         "img": "EvolutionGenerator.gif",
         "title": "Evolution Simulator",
